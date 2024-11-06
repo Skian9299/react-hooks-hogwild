@@ -1,0 +1,67 @@
+/* Main wrapper for the navigation bar */
+.navWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-bottom: 2px solid #ddd;
+    text-align: center;
+}
+
+/* Style for the header text */
+.headerText {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #4a90e2;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Style for the piggy image */
+.TwirlyPig {
+    margin: 20px 0;
+    animation: twirl 2s infinite linear;
+}
+
+/* Animation for the piggy image (rotating effect) */
+@keyframes twirl {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Style for the description text */
+.normalText {
+    font-size: 1.2rem;
+    color: #777;
+    font-style: italic;
+}
+
+/* Ensuring the image has proper size */
+.App-logo {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .headerText {
+        font-size: 2.5rem;
+    }
+
+    .normalText {
+        font-size: 1rem;
+    }
+
+    .App-logo {
+        width: 100px;
+        height: 100px;
+    }
+}
